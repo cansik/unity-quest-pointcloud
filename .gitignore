@@ -68,3 +68,5 @@ crashlytics-build.properties
 # others
 .DS-Store
 .idea
+Assets/Models/Platzspitz2_color_2mio_centered.ply
+Assets/Models/1_TableFlat.ply

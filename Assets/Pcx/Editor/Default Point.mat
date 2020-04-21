@@ -21,6 +21,6 @@ Material:
     m_TexEnvs: []
     m_Floats:
     - _Distance: 0
-    - _PointSize: 3
+    - _PointSize: 0.01
     m_Colors:
-    - _Tint: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _Tint: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 1}
