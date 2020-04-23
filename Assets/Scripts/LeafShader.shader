@@ -50,6 +50,14 @@ Shader "Point Cloud/LeafShader"
               float e = 1.0e-10;
               return float3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);
             }
+            
+            float cubicPulse( float c, float w, float x)
+            {
+                x = abs(x - c);
+                if( x>w ) return 0.0;
+                x /= w;
+                return 1.0 - x*x*(3.0-2.0*x);
+            }
 
             half4 _Tint;
             float4x4 _Transform;
@@ -82,12 +90,13 @@ Shader "Point Cloud/LeafShader"
             #endif
             
                 // implmenet leaf movement
-                float movement = sin(_Time.x * (10.0 + (pos.y * pos.z * 200.0))) * 0.01;
+                float movement = sin(_Time.x * (10.0 + (pos.y * pos.z * 500.0))) * 0.005;
                 float3 hsv = rgb2hsv(col);
+
                 //0.416, 0.25 => green range
-                
-                float step = smoothstep(0.4, 0.6, col.g);
-                pos.x += lerp(0, movement, step);
+                float h = cubicPulse(hsv.x, 0.083, 0.333);
+           
+                pos.x += lerp(0, movement, h);
 
                 Varyings o;
                 o.position = UnityObjectToClipPos(pos);
