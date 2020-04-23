@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Default Point
-  m_Shader: {fileID: 4800000, guid: 3fbffb17213654fb0aa8623871812487, type: 3}
+  m_Shader: {fileID: 4800000, guid: 7c951b705dff341f29b736a6d250f25d, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -24,5 +24,10 @@ Material:
     - _PointSize: 5
     - _Test: 0.05
     - _Time: 935.01874
+    - _WaveMaxRadius: 20
+    - _WaveRadius: 10
+    - _WaveSpeed: 2
+    - _WaveStartTime: -1000
+    - _WaveWidth: 0.1
     m_Colors:
     - _Tint: {r: 0.5849056, g: 0.5849056, b: 0.5849056, a: 1}
