@@ -9,11 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Forest_1M.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
-    path: Assets/Scenes/Platzspitz_2M.unity
-    guid: b5ac7129f4db249dea7b44bbff6629ef
+    path: Assets/Scenes/Wave_Demo.unity
+    guid: 7063894b457324096abf02719d633614
   - enabled: 1
-    path: Assets/Scenes/Stadtmuseum_1M.unity
-    guid: 58058b660380749c99567318fa2908ac
+    path: Assets/Scenes/Animated_Forest_1M.unity
+    guid: 927c4de9719054dee8e826c7c4c80661
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 13490118728e6480db48f460fffd0c0c,
       type: 2}
